@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
 
   def pubs
   end
+  
+  def resources
+  end
 end

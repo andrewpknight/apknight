@@ -1,0 +1,12 @@
+export PATH ; PATH="/Users/apk/.rvm/gems/ruby-1.9.3-p194@apknight/bin:/Users/apk/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/apk/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/apk/.rvm/bin:$PATH"
+export rvm_env_string ; rvm_env_string='ruby-1.9.3-p194@apknight'
+export rvm_path ; rvm_path='/Users/apk/.rvm'
+export rvm_ruby_string ; rvm_ruby_string='ruby-1.9.3-p194'
+export rvm_gemset_name ; rvm_gemset_name='apknight'
+export RUBY_VERSION ; RUBY_VERSION='ruby-1.9.3-p194'
+export GEM_HOME ; GEM_HOME='/Users/apk/.rvm/gems/ruby-1.9.3-p194@apknight'
+export GEM_PATH ; GEM_PATH='/Users/apk/.rvm/gems/ruby-1.9.3-p194@apknight:/Users/apk/.rvm/gems/ruby-1.9.3-p194@global'
+export MY_RUBY_HOME ; MY_RUBY_HOME='/Users/apk/.rvm/rubies/ruby-1.9.3-p194'
+export IRBRC ; IRBRC='/Users/apk/.rvm/rubies/ruby-1.9.3-p194/.irbrc'
+unset MAGLEV_HOME
+unset RBXOPT

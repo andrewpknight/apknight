@@ -1,4 +1,28 @@
 @import "bootstrap";
+/* Changes to bootstrap */
+.navbar-inner, .navbar .btn-navbar {
+    background: #fff;
+    }
+
+.navbar .divider-vertical {
+    background-color: #aeaeae;
+    border-right: 1px solid #aeaeae;
+    }
+    
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+    background-color: #111;
+    }
+    
+.navbar .nav > li > a {
+    color: $gray;  
+    text-shadow: none;    
+    &:hover { 
+      color: $grayDarker;
+      text-decoration: underline;
+	    text-shadow: 0px 0px #000000;          
+    }
+}
+    
 
 /* mixins, variables, etc. */
 
@@ -60,19 +84,28 @@ p {
 /* header */
 
 #logo {
+	background: #fff;
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
   color: white;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 5px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: white;
+    color: $grayMediumLight;
     text-decoration: none;
   }
+	img {
+		width: 350px;		
+	}    
+}
+
+img.logo {
+	width: 400px;
+	
 }
 
 /* footer */
@@ -121,3 +154,42 @@ footer {
 		padding-bottom: 20px;
 	}
 }
+
+a.pub-disabled {
+	pointer-events: none;
+	cursor: default;	
+}
+
+/* home page */
+
+.contact-info {
+	font-size: 1em;
+}
+
+.current-research {
+	padding-top: 15px;
+	border-top: 1px dotted #aeaeae;	
+	ul {
+		li {
+			padding-top: 10px;
+		}
+	}
+}
+
+img.front-image {
+	width: 250px;
+}
+
+.front-caption {
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 35px;
+}
+
+.front-citation {
+	width: 75%;
+	text-align: center;
+	padding-top: 30px;
+	margin: 0 auto;
+}
+

@@ -3,6 +3,7 @@ Apknight::Application.routes.draw do
 	
 	match '/pubs',			to: 'static_pages#pubs'
 	match '/resources', to: 'static_pages#resources'
+	match '/code', to: 'static_pages#code'	
 
 
   # The priority is based upon order of creation:

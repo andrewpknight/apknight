@@ -1,12 +1,13 @@
 <header class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container">
-			<%= link_to "Andrew Knight", root_path, id: "logo" %>
+			<%= link_to image_tag("/assets/wustllogo.jpg", class: "logo"), "http://www.wustl.edu", id: "logo" %>
 			<nav>
 				<ul class="nav pull-right">
 					<li><%= link_to "Home",    root_path %></li>
 					<li><%= link_to "Pubs",    pubs_path  %></li>
 					<li><%= link_to "Resources", resources_path %></li>
+					<li><%= link_to "Code", code_path %></li>					
 				</ul>
 			</nav>
 		</div>

@@ -1,13 +1,18 @@
 <% provide(:title, 'Code') %>
-<h1>Code</h1>
+<h3> Code Snippets I Shant Forget </h3></br>
 <% unless @latest_blog_posts.nil? %>
- The latest <%= pluralize(@latest_blog_posts.count, "post") %> from the blog.
+
  <ul>
  <% @latest_blog_posts.each do |post| %>
  <% if nil != post && post.respond_to?(:pubDate) %>
  <li>
  <%= link_to post.title, post.link, :target => "_blank" %>
- (<%= time_ago_in_words(post.pubDate) %> ago via blog feed)
+ (<%= time_ago_in_words(post.pubDate) %> ago)</br></br>
+ <div class="code-snippet">
+ 	<blockquote>
+	 <%= post.description.html_safe %>
+	</blockquote>
+</div>
  </li>
  <% end %>
  <% end %>

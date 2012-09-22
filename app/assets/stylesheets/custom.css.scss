@@ -18,8 +18,8 @@
     text-shadow: none;    
     &:hover { 
       color: $grayDarker;
+	    text-shadow: none;          
       text-decoration: underline;
-	    text-shadow: 0px 0px #000000;          
     }
 }
     
@@ -193,3 +193,14 @@ img.front-image {
 	margin: 0 auto;
 }
 
+.resources {
+	li {
+		padding-bottom: 5px;
+	}
+	
+}
+
+.code-snippet {
+	width: 75%;
+	margin: 0 auto;
+}

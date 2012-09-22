@@ -6,6 +6,9 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
+		<% if Rails.env.production? %>
+			<%= render 'layouts/ga' %>
+		<%end%>        
   </head>
   <body>
   <%= render 'layouts/header' %>
@@ -13,7 +16,5 @@
       <%= yield %>
       <%= render 'layouts/footer' %>
     </div>
-	<% if Rails.env.production? %>
-	<%end%>    
   </body>
 </html>

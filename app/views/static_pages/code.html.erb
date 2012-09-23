@@ -2,21 +2,16 @@
 <h3> Code Snippets I Shant Forget </h3></br>
 <% unless @latest_blog_posts.nil? %>
 
- <ul>
  <% @latest_blog_posts.each do |post| %>
  <% if nil != post && post.respond_to?(:pubDate) %>
- <li>
+ <div style="border-top: 1px solid #aeaeae; padding-top: 10px;">
  <%= link_to post.title, post.link, :target => "_blank" %>
  (<%= time_ago_in_words(post.pubDate) %> ago)</br></br>
- <div class="code-snippet">
- 	<blockquote>
+
 	 <%= post.description.html_safe %>
-	</blockquote>
-</div>
- </li>
+	</div>
  <% end %>
  <% end %>
- </ul>
 <% else %>
  <p>
  <em>No blog posts to show.</em>

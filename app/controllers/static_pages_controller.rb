@@ -5,7 +5,13 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def pubs
+  def research
+  end
+  
+  def teaching
+  end
+  
+  def community
   end
   
   def resources

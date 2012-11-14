@@ -2,7 +2,7 @@ Apknight::Application.routes.draw do
 	root to: 'static_pages#home'
 
 	match '/teaching',			to: 'static_pages#teaching'
-	match '/community',			to: 'static_pages#community'		
+	match '/newventureclub',			to: 'static_pages#newventureclub'		
 	match '/research',			to: 'static_pages#research'
 	match '/resources',			to: 'static_pages#resources'
 	match '/code',					to: 'static_pages#code'	

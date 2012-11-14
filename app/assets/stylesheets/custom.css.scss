@@ -75,6 +75,16 @@ h2 {
   color: $grayLight;
 }
 
+h3 {
+		font-size: 1.3em;
+		letter-spacing: -1px;
+		margin-bottom: 20px;
+		text-align: left;
+		font-weight: normal;
+		color: $grayLight;
+}
+
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -142,7 +152,7 @@ footer {
 	h3 {
 			font-size: 1.3em;
 			letter-spacing: -1px;
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 			text-align: left;
 			font-weight: normal;
 			color: $grayLight;
